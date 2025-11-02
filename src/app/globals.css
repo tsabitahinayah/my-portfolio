@@ -1,0 +1,409 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy-900: #121212;
+  --navy-800: #1c1c1c;
+  --navy-700: #252525;
+  --navy-600: #333333;
+  --navy-500: #595959;
+  --navy-400: #757575;
+  --navy-300: #c0c0c0;
+  --navy-200: #dadada;
+  --navy-100: #f7f7f7;
+  --accent-blue: #009688;
+  --accent-cyan: #009688;
+}
+
+@layer base {
+  h1, h2, h3 {
+    @apply font-serif;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f7f7;
+  color: var(--navy-900);
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--navy-900), var(--accent-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, var(--navy-100), #f7f7f7);
+}
+
+.card-shadow {
+  box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.1), 0 2px 4px -1px rgba(15, 23, 42, 0.06);
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px -3px rgba(15, 23, 42, 0.15), 0 4px 6px -2px rgba(15, 23, 42, 0.1);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--navy-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--navy-400);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--navy-600);
+}
+
+/* BOLD Navy Star Border - untuk background putih (NAVY MURNI) */
+.bold-star-border-light {
+  position: relative;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(18, 18, 18, 0.6),     /* Charcoal 900 - BOLD */
+    rgba(28, 28, 28, 0.7),     /* Charcoal 800 - SANGAT KONTRAS */
+    rgba(18, 18, 18, 0.6),
+    transparent,
+    rgba(37, 37, 37, 0.5),     /* Charcoal 700 */
+    rgba(51, 51, 51, 0.6),    /* Charcoal 600 */
+    rgba(37, 37, 37, 0.5),
+    transparent
+  );
+  background-size: 400% 100%;
+  animation: bold-navy-shimmer 8s ease-in-out infinite;
+}
+
+.bold-star-border-light::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    -90deg,
+    transparent,
+    rgba(15, 23, 42, 0.5),     /* Navy 900 - BOLD */
+    rgba(30, 41, 59, 0.6),     /* Navy 800 - BOLD */
+    rgba(15, 23, 42, 0.5),
+    transparent
+  );
+  background-size: 300% 100%;
+  border-radius: inherit;
+  animation: bold-navy-shimmer-reverse 12s ease-in-out infinite;
+  opacity: 1;
+}
+
+/* BOLD White Star Border - untuk background navy (PUTIH MURNI) */
+.bold-star-border-dark {
+  position: relative;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),  /* Pure white - BOLD */
+    rgba(255, 255, 255, 0.8),  /* Pure white - SANGAT KONTRAS */
+    rgba(255, 255, 255, 0.6),
+    transparent,
+    rgba(248, 250, 252, 0.5),  /* Slate 50 */
+    rgba(241, 245, 249, 0.6),  /* Slate 100 */
+    rgba(248, 250, 252, 0.5),
+    transparent
+  );
+  background-size: 400% 100%;
+  animation: bold-white-shimmer 8s ease-in-out infinite;
+}
+
+.bold-star-border-dark::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    -90deg,
+    transparent,
+    rgba(255, 255, 255, 0.5),  /* Pure white - BOLD */
+    rgba(255, 255, 255, 0.7),  /* Pure white - BOLD */
+    rgba(255, 255, 255, 0.5),
+    transparent
+  );
+  background-size: 300% 100%;
+  border-radius: inherit;
+  animation: bold-white-shimmer-reverse 12s ease-in-out infinite;
+  opacity: 1;
+}
+
+@keyframes bold-navy-shimmer {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes bold-navy-shimmer-reverse {
+  0%, 100% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes bold-white-shimmer {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes bold-white-shimmer-reverse {
+  0%, 100% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Smooth animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Focus styles */
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--accent-blue);
+  outline-offset: 2px;
+}
+
+/* Selection styles */
+::selection {
+  background-color: var(--accent-blue);
+  color: white;
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .bold-star-border-light,
+  .bold-star-border-dark {
+    animation-duration: 10s;
+  }
+  
+  .bold-star-border-light::before,
+  .bold-star-border-dark::before {
+    animation-duration: 15s;
+    opacity: 0.8;
+  }
+}
+
+/* Enhanced backdrop blur */
+@supports (backdrop-filter: blur(12px)) {
+  .enhanced-blur {
+    backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+  }
+}
+
+/* Navy & Light Grey Gradient Text untuk Hero Name */
+.gradient-text-hero-navy {
+  background: linear-gradient(135deg, var(--navy-900), var(--accent-blue));
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient-shift-navy 3s ease infinite;
+}
+
+/* Typewriter Effect dengan Navy & Light Grey */
+.typewriter-text {
+  background: linear-gradient(
+    135deg,
+    var(--navy-900) 0%,
+    var(--navy-700) 30%,
+    var(--navy-500) 60%,
+    var(--accent-blue) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+}
+
+.typewriter-cursor {
+  display: inline-block;
+  background-color: var(--accent-blue);
+  margin-left: 3px;
+  width: 2px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+@keyframes gradient-shift-navy {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Enhanced floating animation */
+@keyframes float {
+  0%, 100% { 
+    transform: translateY(0px) rotate(0deg); 
+  }
+  50% { 
+    transform: translateY(-20px) rotate(5deg); 
+  }
+}
+
+/* Morphing background shapes */
+@keyframes morph-1 {
+  0%, 100% { 
+    transform: scale(1) rotate(0deg);
+    border-radius: 50%;
+  }
+  50% { 
+    transform: scale(1.2) rotate(180deg);
+    border-radius: 30%;
+  }
+}
+
+@keyframes morph-2 {
+  0%, 100% { 
+    transform: scale(1) rotate(0deg);
+    border-radius: 50%;
+  }
+  33% { 
+    transform: scale(0.8) rotate(120deg);
+    border-radius: 20%;
+  }
+  66% { 
+    transform: scale(1.1) rotate(240deg);
+    border-radius: 40%;
+  }
+}
+
+/* Responsive adjustments untuk text animations */
+@media (max-width: 768px) {
+  .typewriter-text {
+    animation-duration: 4s;
+  }
+  
+  .gradient-text-hero-navy {
+    animation-duration: 4s;
+  }
+}
+
+/* Enhanced hover effects */
+.hover-glow:hover {
+  box-shadow: 0 0 20px rgba(0, 150, 136, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Tambahkan ini ke globals.css yang sudah ada */
+
+/* Tech Stack Glowing Border Effect */
+.tech-glow-border {
+  position: relative;
+  background: rgba(28, 28, 28, 0.5);
+  border: 1px solid rgba(51, 51, 51, 0.5);
+  transition: all 0.3s ease;
+}
+
+.tech-glow-border::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  background: linear-gradient(
+    135deg,
+    transparent,
+    rgba(117, 117, 117, 0.4),
+    rgba(186, 186, 186, 0.6),
+    rgba(0, 150, 136, 0.7)
+  );
+  border-radius: inherit;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+}
+
+.tech-glow-border:hover::before {
+  opacity: 1;
+}
+
+.tech-glow-border:hover {
+  background: rgba(30, 41, 59, 0.8);
+  border-color: rgba(148, 163, 184, 0.4);
+  box-shadow: 
+    0 0 20px rgba(148, 163, 184, 0.2),
+    0 0 40px rgba(148, 163, 184, 0.1);
+  transform: translateY(-2px) scale(1.02);
+}
+
+/* Alternative simpler version */
+.tech-simple-glow:hover {
+  border-color: rgba(148, 163, 184, 0.6);
+  box-shadow: 
+    0 0 15px rgba(148, 163, 184, 0.3),
+    inset 0 0 15px rgba(148, 163, 184, 0.1);
+  background: rgba(30, 41, 59, 0.8);
+}
