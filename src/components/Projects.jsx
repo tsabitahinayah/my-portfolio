@@ -47,7 +47,7 @@ export default function Projects() {
       title: 'Portfolio Website',
       description: 'Modern portfolio website with animations and responsive design',
       images: [
-        '/images/projects/f1.png' //Ganti lagi gambarnya kalau udah deploy porto
+        '/images/projects/porto1.png'
       ],
       tags: ['React', 'Tailwind CSS', 'Framer Motion'],
       projectType: 'portfolio' // Changed from 'contact' to 'portfolio'
@@ -78,7 +78,7 @@ export default function Projects() {
       title: 'Shayou Shop',
       description: 'Shayou Shop was created as a final project for the Object-Oriented Programming course. The application is a food ordering system for the Shayou shop.',
       images: [
-        '/images/projects/e1.jpg',
+        '/images/projects/e1.png',
         '/images/projects/e2.png',
         '/images/projects/e3.png',
         '/images/projects/e4.png',

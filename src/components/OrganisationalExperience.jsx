@@ -13,9 +13,9 @@ export default function OrganisationalExperience() {
       position: "left",
       jobDescriptions: [
         "Served as a key member of the Medical Division for PORSENIGAMA 2024, the premier cultural and sports event at Gadjah Mada University (UGM). This multi-sport competition featured participation from 18 Faculties and one Vocational School, fostering spirit and sportivity among UGM students.",
-        "- Administrative Support & Documentation: Managing the administrative process for athlete BPJS (Social Security/Health Insurance) documentation to ensure coverage and compliance.",
-        "- Inventory and Logistics Management: Accurately recapitulating and monitoring all medications and medical supplies used throughout the event.",
-        "- On-Site Emergency Response: Providing immediate first aid and emergency care for all participants and staff during competitions, ensuring prompt and professional medical attention."
+        "Administrative Support & Documentation: Managing the administrative process for athlete BPJS (Social Security/Health Insurance) documentation to ensure coverage and compliance.",
+        "Inventory and Logistics Management: Accurately recapitulating and monitoring all medications and medical supplies used throughout the event.",
+        "On-Site Emergency Response: Providing immediate first aid and emergency care for all participants and staff during competitions, ensuring prompt and professional medical attention."
       ],
       certificates: [
         "/images/organisasi/psg1.png",
@@ -31,8 +31,8 @@ export default function OrganisationalExperience() {
       position: "right",
       jobDescriptions: [
         "Contributed significantly to the successful execution of Pionir Kesatria FT 2024, the official orientation program for 1804 new students of the Faculty of Engineering, Gadjah Mada University (UGM).",
-        "- High-Volume Consumption Management: Managed the end-to-end process of consumption data collection and coordination for all 1804 participants and staff throughout the two-day orientation event.",
-        "- VIP Event Production: Responsible for the complete stage layout and property arrangement for the opening ceremony, an event of high institutional profile, attended by Mr. Ganjar Pranowo and the Minister of Transportation of Indonesia, Ir. Budi Karya Sumadi."
+        "High-Volume Consumption Management: Managed the end-to-end process of consumption data collection and coordination for all 1804 participants and staff throughout the two-day orientation event.",
+        "VIP Event Production: Responsible for the complete stage layout and property arrangement for the opening ceremony, an event of high institutional profile, attended by Mr. Ganjar Pranowo and the Minister of Transportation of Indonesia, Ir. Budi Karya Sumadi."
       ],
       certificates: [
         "/images/organisasi/k1.png",
@@ -62,8 +62,8 @@ export default function OrganisationalExperience() {
       logo: "/images/organisasi/forkommi.jpeg",
       position: "right",
       jobDescriptions: [
-        "- Became a treasurer to mananged finance during the cultural event by FORKOMMI UGM until it is held successfully.",
-        "- Managed a ticketing process to audients who attended the minangfest event and selling 298 tickets from online platform and on the spot in the location of Minangfest event, Serangan Umum 1 Maret Monument, Yogyakarta."
+        "Became a treasurer to mananged finance during the cultural event by FORKOMMI UGM until it is held successfully.",
+        "Managed a ticketing process to audients who attended the minangfest event and selling 298 tickets from online platform and on the spot in the location of Minangfest event, Serangan Umum 1 Maret Monument, Yogyakarta."
       ],
       certificates: [
         "/images/organisasi/m1.png",
