@@ -27,7 +27,7 @@ export default function CertificationsTraining() {
       type: 'Training',
       description: 'Comprehensive training program covering the fundamentals of deep learning using the Keras library, and focused on the practical application of building, compiling, and training neural network models for data science tasks.',
       skills: ['Python', 'Deep Learning Fundamentals', 'Model Building & Training', 'Data Handling', 'Model Evaluation', 'Python Programming'],
-      icon: '/images/certificate/datacamp.jpg',
+      icon: '/images/certificate/datacamp.png',
       image: '/images/certificate/Introduction Keras Course.jpg',
     },
     {
@@ -37,7 +37,7 @@ export default function CertificationsTraining() {
       type: 'Training',
       description: 'Comprehensive training program covering the fundamentals of deep learning using the Keras library, and focused on the practical application of building, compiling, and training neural network models for data science tasks.',
       skills: ['Python', 'Deep Learning Fundamentals', 'Model Building & Training', 'Data Handling', 'Model Evaluation', 'Python Programming'],
-      icon: '/images/certificate/datacamp.jpg',
+      icon: '/images/certificate/datacamp.png',
       image: '/images/certificate/Advanced Keras Course.jpg',
     },
     {
