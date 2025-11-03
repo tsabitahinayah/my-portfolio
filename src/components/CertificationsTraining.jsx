@@ -21,6 +21,17 @@ export default function CertificationsTraining() {
       image: '/images/certificate/Training Certification Web Dev.jpg' 
     },
     {
+      title: 'User Interface Training',
+      organization: 'KMTETI Engineering Faculty UGM',
+      date: 'May 2023',
+      type: 'Certification',
+      description: 'Successfully completed the "Pelatihan User Interface 2" (User Interface Training 2) course, an extensive online training program organized by the Workshop Division of the Electrical and Information Technology Engineering Student Family (KMTETI) at the Faculty of Engineering, Gadjah Mada University, spanning from March 3 to May 5, 2023, demonstrating a dedicated commitment to advanced UI/UX principles and digital design proficiency.',
+      skills: ['UI Design', 'UX Principles', 'Digital Prototyping', 'CSS', 'Tailwind', 'Front-end Development'],
+      icon: '/images/certificate/kmteti.png',
+      // Menggunakan 'image' sebagai kunci standar untuk gambar
+      image: '/images/certificate/Training Certification User Interface.jpg' 
+    },
+    {
       title: 'Introduction to Deep Learning',
       organization: 'Datacamp',
       date: 'June 2024',
