@@ -29,6 +29,8 @@ A modern, responsive personal portfolio website built with Next.js and Tailwind 
 - **Deployment**: Vercel
 
 ## Getting Started
+Into correct directory iput this command below on terminal
+cd D:\Downloads\my-portofolio-ori\my-portfolio
 
 1. Clone the repository:
 ```bash
