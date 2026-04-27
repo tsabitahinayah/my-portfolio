@@ -77,7 +77,7 @@ export default function Hero() {
   const quickStats = [
     { label: 'Information Technology', sublabel: 'Majoring', icon: Code },
     { label: '7 Projects', sublabel: 'Total Projects', icon: FileText },
-    { label: '2.92 / 4.00', sublabel: 'GPA', icon: Settings }
+    { label: '3.10 / 4.00', sublabel: 'GPA', icon: Settings }
   ]
 
   const socialLinks = [
@@ -191,7 +191,7 @@ export default function Hero() {
 
             {/* Action Button - Responsive */}
             <a
-              href="https://drive.google.com/file/d/1f3nmY_kjuVMjRizsa7B5DbhGPuzzNIfD/view?usp=sharing"
+              href="https://drive.google.com/file/d/1InBt7-LyEYDtFWzZhBHaEsK7q2yAWL8b/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
