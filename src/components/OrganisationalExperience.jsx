@@ -6,11 +6,29 @@ export default function OrganisationalExperience() {
   const experiences = [
     {
       id: 1,
+      title: "Medical Division Staff - Gadjah Mada Open Internasional Karate Championship II 2025",
+      company: "Gadjah Mada Open Internasional Karate Championship Gadjah Mada University",
+      duration: "February 2025",
+      logo: "/images/organisasi/logo_gmoikc.png",
+      position: "left",
+      jobDescriptions: [
+        "Served as a key member of the Medical Division for Gadjah Mada Open Internasional Karate Championship (GMOIKC) II 2025, Gadjah Mada University (UGM).",
+        "Administrative Support & Documentation: Managing the administrative process for athlete BPJS (Social Security/Health Insurance) documentation to ensure coverage and compliance.",
+        "On-Site Emergency Response: Providing immediate first aid and emergency care for all participants and staff during competitions, ensuring prompt and professional medical attention."
+      ],
+      certificates: [
+        "/images/organisasi/SERTIFIKAT_GMOIKC_UGM_2025.png",
+        "/images/organisasi/gmo_1.jpeg",
+        "/images/organisasi/gmo_2.jpeg"
+      ]
+    },
+    {
+      id: 2,
       title: "Medical Division Staff - PORSENIGAMA",
       company: "FORKOM UKM Gadjah Mada University",
       duration: "August 2024 - December 2024",
       logo: "/images/organisasi/porsenigama.png",
-      position: "left",
+      position: "right",
       jobDescriptions: [
         "Served as a key member of the Medical Division for PORSENIGAMA 2024, the premier cultural and sports event at Gadjah Mada University (UGM). This multi-sport competition featured participation from 18 Faculties and one Vocational School, fostering spirit and sportivity among UGM students.",
         "Administrative Support & Documentation: Managing the administrative process for athlete BPJS (Social Security/Health Insurance) documentation to ensure coverage and compliance.",
@@ -23,12 +41,12 @@ export default function OrganisationalExperience() {
       ]
     },
     {
-      id: 2,
+      id: 3,
       title: "Equipment, Logistic, adn Consumption Division Staff - Pionir Kesatria FT 2024",
       company: "Faculty of Engineering Gadjah Mada University",
       duration: "May 2024 - August 2024",
       logo: "/images/organisasi/kesatria.png",
-      position: "right",
+      position: "left",
       jobDescriptions: [
         "Contributed significantly to the successful execution of Pionir Kesatria FT 2024, the official orientation program for 1804 new students of the Faculty of Engineering, Gadjah Mada University (UGM).",
         "High-Volume Consumption Management: Managed the end-to-end process of consumption data collection and coordination for all 1804 participants and staff throughout the two-day orientation event.",
@@ -41,12 +59,12 @@ export default function OrganisationalExperience() {
       ]
     },
     {
-      id: 3,
+      id: 4,
       title: "Head of Production Division",
       company: "FORKOMMI Gadjah Mada University",
       duration: "August 2023 - June 2024",
       logo: "/images/organisasi/forkommi.jpeg",
-      position: "left",
+      position: "right",
       jobDescriptions: [
         "Became the head of productuon division in the daily management of Gadjah Mada University Student Association from West Sumatera, FORKOMMI UGM, who initiated a business idea to raise funds for organizational activities."
       ],
@@ -55,12 +73,12 @@ export default function OrganisationalExperience() {
       ]
     },
     {
-      id: 4,
+      id: 5,
       title: "Treasurer - MINANGFEST",
       company: "FORKOMMI Gadjah Mada University",
       duration: "September 2023 - November 2023",
       logo: "/images/organisasi/forkommi.jpeg",
-      position: "right",
+      position: "left",
       jobDescriptions: [
         "Became a treasurer to mananged finance during the cultural event by FORKOMMI UGM until it is held successfully.",
         "Managed a ticketing process to audients who attended the minangfest event and selling 298 tickets from online platform and on the spot in the location of Minangfest event, Serangan Umum 1 Maret Monument, Yogyakarta."
