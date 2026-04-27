@@ -11,7 +11,7 @@ export default function Hero() {
   const [isDeleting, setIsDeleting] = useState(false)
   const [textIndex, setTextIndex] = useState(0)
   
-  const fullText = "Data Scientist | Business Analyst | Web Developer"
+  const fullText = "Data Analyst | Web Developer"
 
   const profileImages = [
     '/images/hero/profile3.png',
