@@ -80,7 +80,7 @@ export default function Contact() {
         {/* Footer */}
         <div className="mt-20 pt-8 border-t border-slate-200 text-center">
           <p className="text-slate-600">
-            © 2025 Tsabitah Inayah. All rights reserved.
+            © 2026 Tsabitah Inayah. All rights reserved.
           </p>
         </div>
       </div>
